@@ -1,0 +1,115 @@
+{
+  "parents": 310,
+  "atoms": 830,
+  "accuracy": 0.6645161290322581,
+  "balanced_accuracy": 0.6838527454641199,
+  "method": {
+    "prior": {
+      "sum_case_median_cpu_ns": 250119000,
+      "character_blocks": 546,
+      "alignment_blocks": 213
+    },
+    "dense": {
+      "sum_case_median_cpu_ns": 235026000,
+      "character_blocks": 546,
+      "alignment_blocks": 213,
+      "all_atoms_character_work": {
+        "queries": 830,
+        "exhaustive_pairs": 271993,
+        "candidates": 271993,
+        "pair_evaluations": 206155,
+        "length_skips": 945,
+        "cache_hits": 64893,
+        "indexes": 0
+      }
+    },
+    "sparse": {
+      "sum_case_median_cpu_ns": 209295000,
+      "character_blocks": 546,
+      "alignment_blocks": 213,
+      "all_atoms_character_work": {
+        "queries": 830,
+        "exhaustive_pairs": 271993,
+        "candidates": 12532,
+        "pair_evaluations": 9665,
+        "length_skips": 35,
+        "cache_hits": 2832,
+        "indexes": 2805
+      }
+    },
+    "bitmask": {
+      "sum_case_median_cpu_ns": 185173000,
+      "character_blocks": 546,
+      "alignment_blocks": 213,
+      "all_atoms_character_work": {
+        "queries": 830,
+        "exhaustive_pairs": 271993,
+        "candidates": 12532,
+        "pair_evaluations": 9667,
+        "length_skips": 36,
+        "cache_hits": 2829,
+        "indexes": 2805
+      }
+    },
+    "signature": {
+      "sum_case_median_cpu_ns": 195233000,
+      "character_blocks": 546,
+      "alignment_blocks": 213,
+      "all_atoms_character_work": {
+        "queries": 830,
+        "exhaustive_pairs": 271993,
+        "candidates": 22455,
+        "pair_evaluations": 17241,
+        "length_skips": 70,
+        "cache_hits": 5144,
+        "indexes": 2805
+      }
+    },
+    "sparse_eager": {
+      "sum_case_median_cpu_ns": 227028000,
+      "character_blocks": 546,
+      "alignment_blocks": 546
+    },
+    "bitmask_eager": {
+      "sum_case_median_cpu_ns": 204104000,
+      "character_blocks": 546,
+      "alignment_blocks": 546
+    },
+    "signature_eager": {
+      "sum_case_median_cpu_ns": 216350000,
+      "character_blocks": 546,
+      "alignment_blocks": 546
+    }
+  },
+  "contrasts": {
+    "prior": {
+      "relative_reduction": 0.2596604016488152,
+      "paired_95": [
+        0.23188447417878696,
+        0.28604658684592865
+      ],
+      "clusters": 283
+    },
+    "dense": {
+      "relative_reduction": 0.21211695727281232,
+      "paired_95": [
+        0.18827701924306894,
+        0.23551367544481974
+      ],
+      "clusters": 283
+    },
+    "bitmask_eager": {
+      "relative_reduction": 0.09275173440990869,
+      "paired_95": [
+        0.07189450560624336,
+        0.11304441546607955
+      ],
+      "clusters": 283
+    }
+  },
+  "baseline": "dense",
+  "candidate": "bitmask",
+  "passed": true,
+  "peak_rss_bytes": 180109312,
+  "cohort": "test"
+}

@@ -1,0 +1,20 @@
+{
+  "source": {
+    "PROTOCOL.md": "84550b9ae9fca149405dabdaf681db32e529914942d5c57eb82de6fb22694f4c",
+    "matching.py": "0d8768f0316549fc57e5332f470b119464175c388d4719479ca58dfc8e5f3897",
+    "study.py": "c9a14cb5a6e71a3a8a270c509c9996f1e628570d16f94165dd9ef3794a4497db",
+    "../live-verifier/study.py": "a1606a26e875d6766dc16734c4df842d47a8069a72210a0d013f4cf1d6639389",
+    "../live-verifier/LOCK.json": "de4aad526bf76c5f0d25bf7658c7f533000e18a1d8e24cfa807bfbaf6d63e9f1",
+    "../study.py": "2b881acbb479f6b94e603f88f8940cae7414481bca11665f488c2d631a596984",
+    "../fetch_inputs.py": "9b980cce88d942e95c473f4843282e39a4ae1c23677704ed03c68617a227dcb6"
+  },
+  "data": {
+    "train": "e8ba1ed589e22c5f9d41c8d858dd10bdc17665d224f8ce28be9d9024239cf513",
+    "dev": "4747a5a60c85c0c12cbf1cc7a2ab4bc9279fd4fd01a83d36630b7151330b6f57",
+    "test": "3202b7bff5979dfbca745f48edd8da5ad166da0886fd15042cc1ab9d2010ee19"
+  },
+  "model": "ddc6a7c03ee2852a648d0f2206018331fa0a3a736af7324694afad51eaa54114",
+  "baseline": "dense",
+  "candidate": "bitmask",
+  "development_summary": "68e558d55d6faf35d88eeb344374b1f956c97939c28237d05caf0ce72d3ce57c"
+}

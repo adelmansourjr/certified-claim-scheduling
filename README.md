@@ -1,5 +1,7 @@
 # Certified schedules for factual conjunctions
 
+**New timing study:** [Exact packed fuzzy matching](sparse-fuzzy/) preserves every verifier verdict while reducing aggregate CPU time by 20.8% on held-out WiCE and 40.5% on an untuned SciFact workload, against a cached dense control.
+
 **Follow-up:** [Exact early exits in a trained WiCE verifier](live-verifier/) preserves all 310 held-out decisions while skipping 61% of expensive alignment calls and reducing CPU time by 7.6% versus an optimized matched verifier.
 
 A factuality checker can decompose a claim and verify its parts. Must it inspect every part, and when is it better to check two at once? We evaluated exact early stopping and batch schedules on official WiCE subclaim annotations, using a proxy cost for contextual setup and checks.

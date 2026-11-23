@@ -1,0 +1,115 @@
+{
+  "parents": 309,
+  "atoms": 838,
+  "accuracy": 0.7313915857605178,
+  "balanced_accuracy": 0.7503501400560224,
+  "method": {
+    "prior": {
+      "sum_case_median_cpu_ns": 203643000,
+      "character_blocks": 537,
+      "alignment_blocks": 215
+    },
+    "dense": {
+      "sum_case_median_cpu_ns": 189816000,
+      "character_blocks": 537,
+      "alignment_blocks": 215,
+      "all_atoms_character_work": {
+        "queries": 838,
+        "exhaustive_pairs": 260991,
+        "candidates": 260991,
+        "pair_evaluations": 194389,
+        "length_skips": 856,
+        "cache_hits": 65746,
+        "indexes": 0
+      }
+    },
+    "sparse": {
+      "sum_case_median_cpu_ns": 168258000,
+      "character_blocks": 537,
+      "alignment_blocks": 215,
+      "all_atoms_character_work": {
+        "queries": 838,
+        "exhaustive_pairs": 260991,
+        "candidates": 12256,
+        "pair_evaluations": 9290,
+        "length_skips": 28,
+        "cache_hits": 2938,
+        "indexes": 2863
+      }
+    },
+    "bitmask": {
+      "sum_case_median_cpu_ns": 147723000,
+      "character_blocks": 537,
+      "alignment_blocks": 215,
+      "all_atoms_character_work": {
+        "queries": 838,
+        "exhaustive_pairs": 260991,
+        "candidates": 12256,
+        "pair_evaluations": 9278,
+        "length_skips": 41,
+        "cache_hits": 2937,
+        "indexes": 2863
+      }
+    },
+    "signature": {
+      "sum_case_median_cpu_ns": 157290000,
+      "character_blocks": 537,
+      "alignment_blocks": 215,
+      "all_atoms_character_work": {
+        "queries": 838,
+        "exhaustive_pairs": 260991,
+        "candidates": 21461,
+        "pair_evaluations": 16234,
+        "length_skips": 72,
+        "cache_hits": 5155,
+        "indexes": 2863
+      }
+    },
+    "sparse_eager": {
+      "sum_case_median_cpu_ns": 182729000,
+      "character_blocks": 537,
+      "alignment_blocks": 537
+    },
+    "bitmask_eager": {
+      "sum_case_median_cpu_ns": 164519000,
+      "character_blocks": 537,
+      "alignment_blocks": 537
+    },
+    "signature_eager": {
+      "sum_case_median_cpu_ns": 172817000,
+      "character_blocks": 537,
+      "alignment_blocks": 537
+    }
+  },
+  "contrasts": {
+    "prior": {
+      "relative_reduction": 0.2745981938981453,
+      "paired_95": [
+        0.25465761080490285,
+        0.29706545022022657
+      ],
+      "clusters": 271
+    },
+    "dense": {
+      "relative_reduction": 0.2217568592742445,
+      "paired_95": [
+        0.20092297417014995,
+        0.2441715059156511
+      ],
+      "clusters": 271
+    },
+    "bitmask_eager": {
+      "relative_reduction": 0.10209155173566575,
+      "paired_95": [
+        0.08815373474664154,
+        0.11663500153689939
+      ],
+      "clusters": 271
+    }
+  },
+  "baseline": "dense",
+  "candidate": "bitmask",
+  "passed": true,
+  "peak_rss_bytes": 178290688,
+  "cohort": "development"
+}

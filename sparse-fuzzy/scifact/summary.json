@@ -1,0 +1,44 @@
+{
+  "parents": 339,
+  "baseline": "dense",
+  "candidate": "bitmask",
+  "sum_case_median_cpu_ns": {
+    "prior": 123291000,
+    "dense": 112476000,
+    "sparse": 82741000,
+    "bitmask": 66909000,
+    "signature": 74454000,
+    "sparse_eager": 92725000,
+    "bitmask_eager": 76002000,
+    "signature_eager": 83712000
+  },
+  "contrasts": {
+    "prior": {
+      "relative_reduction": 0.4573083193420444,
+      "paired_95": [
+        0.44041813863597856,
+        0.47281774623483397
+      ],
+      "clusters": 247
+    },
+    "dense": {
+      "relative_reduction": 0.40512642697108714,
+      "paired_95": [
+        0.3884185877462462,
+        0.42066908705153155
+      ],
+      "clusters": 247
+    },
+    "bitmask_eager": {
+      "relative_reduction": 0.1196415883792532,
+      "paired_95": [
+        0.10403499786924039,
+        0.1354904776954903
+      ],
+      "clusters": 247
+    }
+  },
+  "cohort": "SciFact development, all released claim-cited-abstract pairs",
+  "claims": 300,
+  "abstracts": 283
+}
