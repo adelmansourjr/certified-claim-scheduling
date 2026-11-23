@@ -1,0 +1,9 @@
+{
+  "phase": "frozen before downloading test annotations",
+  "sha256": {
+    "PROTOCOL.md": "451af825089aed6d54643b1697d8a7f2fbd33a102064bfe326d437d8a050a59c",
+    "study.py": "2b881acbb479f6b94e603f88f8940cae7414481bca11665f488c2d631a596984",
+    "scheduling.py": "5587abeb150bd77207082f43bf61dee09a6210f507d4c32d3fd60cd0da4564b4",
+    "test_scheduling.py": "a20bf9ed96d7af40322e99237743a47df242b377117b29e98afbd67062e526fa"
+  }
+}

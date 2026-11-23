@@ -1,0 +1,744 @@
+{
+  "mode": "official_test",
+  "protocol_sha": "451af825089aed6d54643b1697d8a7f2fbd33a102064bfe326d437d8a050a59c",
+  "train_sha": "e8ba1ed589e22c5f9d41c8d858dd10bdc17665d224f8ce28be9d9024239cf513",
+  "dev_sha": "4747a5a60c85c0c12cbf1cc7a2ab4bc9279fd4fd01a83d36630b7151330b6f57",
+  "fitting_claims": 1260,
+  "dev_claims": 309,
+  "dev_claims_excluded_for_overlap": 40,
+  "learned_dependence_strength": 0.7,
+  "width_choices": {
+    "2/0": 1,
+    "2/16": 1,
+    "2/48": 2,
+    "2/144": 2,
+    "2/document_words": 2,
+    "4/0": 1,
+    "4/16": 1,
+    "4/48": 2,
+    "4/144": 4,
+    "4/document_words": 4
+  },
+  "test_sha": "3202b7bff5979dfbca745f48edd8da5ad166da0886fd15042cc1ab9d2010ee19",
+  "total_test_parent_claims": 358,
+  "test_claims_excluded_for_overlap": 47,
+  "test_singletons": 1,
+  "test_claims_above_8": 0,
+  "primary_setting": "2/48",
+  "resources": {
+    "wall_seconds": 2.5342,
+    "peak_rss_bytes": 138985472
+  },
+  "settings": {
+    "2/0": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 49.34193548387097,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 49.34193548387097,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 68.65483870967742,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 54.69032258064516,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 49.34193548387097,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 83.49677419354839,
+          "mean_rounds": 1.5290322580645161,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": 0.0,
+        "doc_title_group_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": 0.0,
+        "doc_title_group_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": 0.0,
+        "doc_title_group_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "joint_and_independent_schedules_differ": 2,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "2/16": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 73.76774193548387,
+          "mean_rounds": 1.3483870967741935,
+          "mean_checks": 1.6709677419354838
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 74.0516129032258,
+          "mean_rounds": 1.3806451612903226,
+          "mean_checks": 1.664516129032258
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 86.97741935483872,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 82.66451612903226,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 74.68387096774194,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 107.96129032258065,
+          "mean_rounds": 1.5290322580645161,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": -0.2838709677419355,
+        "doc_title_group_bootstrap95": [
+          -0.78277351,
+          0.25674671
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -0.9161290322580645,
+        "doc_title_group_bootstrap95": [
+          -2.35415113,
+          0.53597256
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -0.632258064516129,
+        "doc_title_group_bootstrap95": [
+          -1.99001563,
+          0.70099186
+        ]
+      },
+      "joint_and_independent_schedules_differ": 46,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "2/48": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 115.34193548387097,
+          "mean_rounds": 1.235483870967742,
+          "mean_checks": 1.793548387096774
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 115.65161290322581,
+          "mean_rounds": 1.229032258064516,
+          "mean_checks": 1.8129032258064517
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 123.62258064516129,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 138.61290322580646,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 123.62258064516129,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 156.89032258064515,
+          "mean_rounds": 1.5290322580645161,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": -0.3096774193548387,
+        "doc_title_group_bootstrap95": [
+          -1.40323901,
+          0.93774472
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -8.280645161290323,
+        "doc_title_group_bootstrap95": [
+          -10.92977941,
+          -5.52425852
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -7.970967741935484,
+        "doc_title_group_bootstrap95": [
+          -10.43761266,
+          -5.43724702
+        ]
+      },
+      "joint_and_independent_schedules_differ": 41,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "2/144": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 229.79354838709676,
+          "mean_rounds": 1.1709677419354838,
+          "mean_checks": 1.9548387096774194
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 230.46129032258065,
+          "mean_rounds": 1.167741935483871,
+          "mean_checks": 1.9903225806451612
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 233.55806451612904,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 306.458064516129,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 233.55806451612904,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 303.6774193548387,
+          "mean_rounds": 1.5290322580645161,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": -0.667741935483871,
+        "doc_title_group_bootstrap95": [
+          -1.81518415,
+          0.83063264
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -3.764516129032258,
+        "doc_title_group_bootstrap95": [
+          -6.84212181,
+          -0.32289504
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -3.096774193548387,
+        "doc_title_group_bootstrap95": [
+          -5.8701799,
+          0.0518164
+        ]
+      },
+      "joint_and_independent_schedules_differ": 24,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "2/document_words": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1744.7677419354839,
+          "mean_rounds": 1.1516129032258065,
+          "mean_checks": 2.141935483870968
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1742.6,
+          "mean_rounds": 1.1483870967741936,
+          "mean_checks": 2.1580645161290324
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1742.8516129032257,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 2593.0387096774193,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1742.8516129032257,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 2281.7580645161293,
+          "mean_rounds": 1.5290322580645161,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": 2.167741935483871,
+        "doc_title_group_bootstrap95": [
+          -1.03607153,
+          8.14988658
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": 1.9161290322580644,
+        "doc_title_group_bootstrap95": [
+          -1.89455871,
+          8.54529181
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -0.25161290322580643,
+        "doc_title_group_bootstrap95": [
+          -1.39001431,
+          1.34429756
+        ]
+      },
+      "joint_and_independent_schedules_differ": 10,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "4/0": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 49.34193548387097,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 49.34193548387097,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 82.23548387096774,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 54.69032258064516,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 49.34193548387097,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 83.49677419354839,
+          "mean_rounds": 1.0419354838709678,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": 0.0,
+        "doc_title_group_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": 0.0,
+        "doc_title_group_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": 0.0,
+        "doc_title_group_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "joint_and_independent_schedules_differ": 2,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "4/16": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 73.13548387096775,
+          "mean_rounds": 1.303225806451613,
+          "mean_checks": 1.6741935483870967
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 73.63870967741936,
+          "mean_rounds": 1.3548387096774193,
+          "mean_checks": 1.664516129032258
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 98.39032258064516,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 82.66451612903226,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 74.68387096774194,
+          "mean_rounds": 1.5838709677419356,
+          "mean_checks": 1.5838709677419356
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 100.16774193548387,
+          "mean_rounds": 1.0419354838709678,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": -0.5032258064516129,
+        "doc_title_group_bootstrap95": [
+          -1.05630077,
+          0.08130208
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -1.5483870967741935,
+        "doc_title_group_bootstrap95": [
+          -3.17119516,
+          0.04119782
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -1.0451612903225806,
+        "doc_title_group_bootstrap95": [
+          -2.5296191,
+          0.37842712
+        ]
+      },
+      "joint_and_independent_schedules_differ": 50,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "4/48": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 114.61290322580645,
+          "mean_rounds": 1.1612903225806452,
+          "mean_checks": 1.8903225806451613
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 114.41612903225807,
+          "mean_rounds": 1.1612903225806452,
+          "mean_checks": 1.8838709677419354
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 130.7,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 138.61290322580646,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 123.62258064516129,
+          "mean_rounds": 1.1451612903225807,
+          "mean_checks": 2.1903225806451614
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 133.50967741935483,
+          "mean_rounds": 1.0419354838709678,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": 0.1967741935483871,
+        "doc_title_group_bootstrap95": [
+          -1.00644239,
+          1.62504058
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -9.009677419354839,
+        "doc_title_group_bootstrap95": [
+          -12.20457422,
+          -5.67647185
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -9.206451612903226,
+        "doc_title_group_bootstrap95": [
+          -12.20010355,
+          -6.21073094
+        ]
+      },
+      "joint_and_independent_schedules_differ": 45,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "4/144": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 221.34193548387097,
+          "mean_rounds": 1.0580645161290323,
+          "mean_checks": 2.2161290322580647
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 221.63225806451612,
+          "mean_rounds": 1.0612903225806452,
+          "mean_checks": 2.2096774193548385
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 227.6290322580645,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 306.458064516129,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 227.6290322580645,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 233.53548387096774,
+          "mean_rounds": 1.0419354838709678,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": -0.2903225806451613,
+        "doc_title_group_bootstrap95": [
+          -1.53269608,
+          0.58805406
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -6.287096774193548,
+        "doc_title_group_bootstrap95": [
+          -10.75281651,
+          -1.57123682
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": -5.996774193548387,
+        "doc_title_group_bootstrap95": [
+          -10.49394042,
+          -1.25180112
+        ]
+      },
+      "joint_and_independent_schedules_differ": 20,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    },
+    "4/document_words": {
+      "count": 310,
+      "clusters": 283,
+      "all_pass_count": 99,
+      "methods": {
+        "joint_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1576.1903225806452,
+          "mean_rounds": 1.0129032258064516,
+          "mean_checks": 2.4870967741935486
+        },
+        "independent_dp": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1580.7451612903226,
+          "mean_rounds": 1.0193548387096774,
+          "mean_checks": 2.47741935483871
+        },
+        "max_batch": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1580.1580645161291,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "natural_sequential": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 2593.0387096774193,
+          "mean_rounds": 1.7483870967741935,
+          "mean_checks": 1.7483870967741935
+        },
+        "selected_fixed": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1580.1580645161291,
+          "mean_rounds": 1.0096774193548388,
+          "mean_checks": 2.6354838709677417
+        },
+        "full_all_checks": {
+          "decision_positive_rate": 0.3193548387096774,
+          "mean_proxy_cost_units": 1624.6709677419356,
+          "mean_rounds": 1.0419354838709678,
+          "mean_checks": 2.6774193548387095
+        }
+      },
+      "joint_vs_independent": {
+        "paired_mean_extra_units": -4.554838709677419,
+        "doc_title_group_bootstrap95": [
+          -12.5607377,
+          0.59616935
+        ]
+      },
+      "joint_vs_selected_fixed": {
+        "paired_mean_extra_units": -3.967741935483871,
+        "doc_title_group_bootstrap95": [
+          -6.04614742,
+          -1.72341306
+        ]
+      },
+      "independent_vs_selected_fixed": {
+        "paired_mean_extra_units": 0.5870967741935483,
+        "doc_title_group_bootstrap95": [
+          -5.3039902,
+          9.10263082
+        ]
+      },
+      "joint_and_independent_schedules_differ": 10,
+      "joint_brier": 0.18966783702944937,
+      "independent_brier": 0.19033083364592734,
+      "brier_diff_bootstrap95": [
+        -0.0075617,
+        0.00569307
+      ]
+    }
+  }
+}
