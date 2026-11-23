@@ -1,0 +1,44 @@
+{
+  "parents": 310,
+  "paired_repeats": 5,
+  "seed": 88193,
+  "all_methods_exact": true,
+  "exploratory_orders": {
+    "lexical": {
+      "sum_case_median_cpu_ns": {
+        "fused_short_circuit": 218656000,
+        "certified": 202692000
+      },
+      "relative_reduction": 0.07300965900775647,
+      "paired_95": [
+        0.058720821739625145,
+        0.0880549632662577
+      ],
+      "clusters": 283
+    },
+    "original": {
+      "sum_case_median_cpu_ns": {
+        "fused_short_circuit": 234987000,
+        "certified": 217027000
+      },
+      "relative_reduction": 0.07642975994416712,
+      "paired_95": [
+        0.06130827795182969,
+        0.09153638564864564
+      ],
+      "clusters": 283
+    },
+    "cost": {
+      "sum_case_median_cpu_ns": {
+        "fused_short_circuit": 230246000,
+        "certified": 212232000
+      },
+      "relative_reduction": 0.07823805842446774,
+      "paired_95": [
+        0.061262166879050575,
+        0.09500849376445429
+      ],
+      "clusters": 283
+    }
+  }
+}

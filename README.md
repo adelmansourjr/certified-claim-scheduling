@@ -1,5 +1,7 @@
 # Certified schedules for factual conjunctions
 
+**Follow-up:** [Exact early exits in a trained WiCE verifier](live-verifier/) preserves all 310 held-out decisions while skipping 61% of expensive alignment calls and reducing CPU time by 7.6% versus an optimized matched verifier.
+
 A factuality checker can decompose a claim and verify its parts. Must it inspect every part, and when is it better to check two at once? We evaluated exact early stopping and batch schedules on official WiCE subclaim annotations, using a proxy cost for contextual setup and checks.
 
 In the prespecified scenario, the learned joint scheduler preserved all **310** annotation-derived decisions and spent **6.70% less** than the validation-selected fixed-width scheduler. A strong exact scheduler given independent marginals was almost equally good. The comparison does **not** establish a gain from the fitted dependence model or predict wall-clock speed for language models.

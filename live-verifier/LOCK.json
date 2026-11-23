@@ -1,0 +1,19 @@
+{
+  "policy": "lexical",
+  "block_order": [
+    "local",
+    "character",
+    "alignment"
+  ],
+  "dev_sha256": "6117a7d6b30084def38eec0ff5362c4b3f4c231bd21a4dc0ddb20eadcd03f1bc",
+  "source": {
+    "study.py": "a1606a26e875d6766dc16734c4df842d47a8069a72210a0d013f4cf1d6639389",
+    "PROTOCOL.md": "921cd4ba45efc231f7f42a729f9c500d99191ef0ae213e8f8d265130457e8e59",
+    "test_study.py": "2d6f865c487384d1911583f48651f245118ef03dd3be4a11aad8644777e275fe"
+  },
+  "parent": {
+    "study.py": "2b881acbb479f6b94e603f88f8940cae7414481bca11665f488c2d631a596984",
+    "scheduling.py": "5587abeb150bd77207082f43bf61dee09a6210f507d4c32d3fd60cd0da4564b4",
+    "fetch_inputs.py": "9b980cce88d942e95c473f4843282e39a4ae1c23677704ed03c68617a227dcb6"
+  }
+}
